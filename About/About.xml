@@ -13,12 +13,6 @@
             <steamWorkshopUrl>steam://url/CommunityFilePage/2009463077</steamWorkshopUrl>
             <downloadUrl>https://github.com/pardeike/HarmonyRimWorld/releases/latest</downloadUrl>
         </li>
-        <li>
-            <packageId>UnlimitedHugs.HugsLib</packageId>
-            <displayName>HugsLib</displayName>
-            <downloadUrl>https://github.com/UnlimitedHugs/RimworldHugsLib/releases/latest</downloadUrl>
-            <steamWorkshopUrl>steam://url/CommunityFilePage/818773962</steamWorkshopUrl>
-        </li>
     </modDependencies>
     <loadBefore>
         <li>explodoboy.SNSAmbitionCosmic</li>
