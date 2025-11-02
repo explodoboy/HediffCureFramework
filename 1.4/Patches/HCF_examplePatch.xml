@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+	<!-- ========== Base Dryad ========== -->
+
+	<Operation Class="PatchOperationAdd">
+		<xpath>Defs/HediffDef[defName="HCF_example_B"]/comps</xpath>
+		<value>
+			 <li Class="IHaveTheCure.HediffCompProperties_CuresHediffs"> <!-- This specific comp is the only thing added by the mod. -->
+                <hediffsToCure> <!-- All hediffs within here are immediately removed if they ever appear in a pawn for any reason. -->
+                    <li>GutWorms</li>
+                    <li>FoodPoisoning</li>
+                    <li>MuscleParasites</li>
+                    <li>WoundInfection</li>
+                    <li>Flu</li>
+                    <li>Animal_Flu</li>
+                    <li>Plague</li>
+                    <li>Animal_Plague</li>
+                    <li>Malaria</li>
+                    <li>SleepingSickness</li>
+                </hediffsToCure>
+            </li>
+		</value>
+	</Operation>
+	
+</Patch>
+

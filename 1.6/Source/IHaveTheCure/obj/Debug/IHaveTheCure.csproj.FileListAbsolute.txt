@@ -1,0 +1,5 @@
+D:\Documents\GitHub Projects\HediffCureFramework\1.6\Source\IHaveTheCure\obj\Debug\IHaveTheCure.csproj.AssemblyReference.cache
+D:\Documents\GitHub Projects\HediffCureFramework\1.6\Source\IHaveTheCure\obj\Debug\IHaveTheCure.csproj.CoreCompileInputs.cache
+D:\Documents\GitHub Projects\HediffCureFramework\1.6\Assemblies\IHaveTheCure.dll
+D:\Documents\GitHub Projects\HediffCureFramework\1.6\Source\IHaveTheCure\obj\Debug\IHaveThe.2BBF5C17.Up2Date
+D:\Documents\GitHub Projects\HediffCureFramework\1.6\Source\IHaveTheCure\obj\Debug\IHaveTheCure.dll

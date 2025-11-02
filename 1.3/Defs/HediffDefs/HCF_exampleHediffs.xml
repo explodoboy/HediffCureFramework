@@ -1,0 +1,84 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <HediffDef> <!-- This is a full example of a modded hediff that fully cures hediffs. -->
+    <defName>HCF_example_A</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>I HAVE THE CURE! Example Hediff 1</label>
+    <description>An example hediff for the 'I Have The Cure!' mod.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.9</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+	  <li Class="IHaveTheCure.HediffCompProperties_CuresHediffs"> <!-- This specific comp is the only thing added by the mod. -->
+		<hediffsToCure> <!-- All hediffs within here are immediately removed if they ever appear in a pawn for any reason. -->
+            <li>GutWorms</li>
+            <li>FoodPoisoning</li>
+            <li>MuscleParasites</li>
+            <li>WoundInfection</li>
+            <li>Flu</li>
+            <li>Animal_Flu</li>
+            <li>Plague</li>
+            <li>Animal_Plague</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+		</hediffsToCure>
+	  </li>
+    </comps>
+      <stages> <!-- This below is vanilla code. -->
+        <li>
+          <makeImmuneTo>
+            <li>GutWorms</li>
+            <li>FoodPoisoning</li>
+            <li>MuscleParasites</li>
+            <li>WoundInfection</li>
+            <li>Flu</li>
+            <li>Animal_Flu</li>
+            <li>Plague</li>
+            <li>Animal_Plague</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+          </makeImmuneTo>
+        </li>
+      </stages>
+  </HediffDef>
+  
+  <HediffDef> <!-- This is an example of a purely XML-based hediff, that can be made without any modded assemblies. -->
+    <defName>HCF_example_B</defName>
+    <hediffClass>Hediff_High</hediffClass>
+    <label>I HAVE THE CURE! Example Hediff 2</label>
+    <description>An example hediff for the 'I Have The Cure!' mod. This hediff is for showcasing patches.</description>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-0.9</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages> <!-- This below is vanilla code. -->
+        <li>
+          <makeImmuneTo>
+            <li>GutWorms</li>
+            <li>FoodPoisoning</li>
+            <li>MuscleParasites</li>
+            <li>WoundInfection</li>
+            <li>Flu</li>
+            <li>Animal_Flu</li>
+            <li>Plague</li>
+            <li>Animal_Plague</li>
+            <li>Malaria</li>
+            <li>SleepingSickness</li>
+          </makeImmuneTo>
+        </li>
+      </stages>
+  </HediffDef>
+
+</Defs>
